@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamaldeen Akinade - Front-End Developer & Creative UX Designer Portfolio">
+    <title>Kamaldeen Akinade | Front-End Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <h1>Kamaldeen Akinade</h1>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2>Hi, I'm <span class="name">Kamaldeen Akinade</span></h2>
+            <p>Front-End Developer & Creative UX Designer</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="description-n-tags-container">
+                <p>I'm a passionate front-end developer with a keen eye for design and a love for creating engaging user experiences. Currently completing an intensive front-end engineering bootcamp, I specialize in building responsive, accessible websites using modern web technologies.</p>
+                <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or learning the latest web development frameworks.</p>
+
+                <ul class="tags" aria-label="Skills">
+                    <li class="tag">HTML5</li>
+                    <li class="tag">CSS3</li>
+                    <li class="tag">JavaScript</li>
+                    <li class="tag">Responsive Design</li>
+                    <li class="tag">User Experience</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <article class="project">
+                    <div class="project-thumbnail">
+                        <h3>Project 1</h3>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="title">E-commerce Landing Page</h3>
+                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
+                        <ul class="tags" aria-label="Technologies used">
+                            <li class="tag">HTML5</li>
+                            <li class="tag">CSS3</li>
+                            <li class="tag">JavaScript</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="View live demo of E-commerce Landing Page">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#" aria-label="View GitHub repository">
+                                GitHub
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-thumbnail">
+                        <h3>Project 2</h3>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="title">Portfolio Dashboard</h3>
+                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
+                        <ul class="tags" aria-label="Technologies used">
+                            <li class="tag">HTML5</li>
+                            <li class="tag">CSS3</li>
+                            <li class="tag">JavaScript</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="View live demo of Portfolio Dashboard">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#" aria-label="View GitHub repository">
+                                GitHub
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-thumbnail">
+                        <h3>Project 3</h3>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="title">Task Manager App</h3>
+                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
+                        <ul class="tags" aria-label="Technologies used">
+                            <li class="tag">HTML5</li>
+                            <li class="tag">CSS3</li>
+                            <li class="tag">JavaScript</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="View live demo of Task Manager App">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#" aria-label="View GitHub repository">
+                                GitHub
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+                <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
+                <textarea name="message" placeholder="Your Message" id="message" required aria-label="Your message"></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+
+            <ul class="social-links" aria-label="Social media links">
+                <li>
+                    <a href="#" aria-label="Visit my GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Connect on LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Follow on Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Kamaldeen Akinade. All rights reserved.</p>
+    </footer>
+</body>
+</html>
