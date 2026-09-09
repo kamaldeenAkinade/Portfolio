@@ -1,173 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kamaldeen Akinade - Front-End Developer & Creative UX Designer Portfolio">
-    <title>Kamaldeen Akinade | Front-End Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kamaldeen Akinade is a front-end developer crafting clear, expressive digital experiences." />
+  <meta name="theme-color" content="#11110f" />
+  <title>Kamaldeen Akinade — Front-end developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="logo-container">
-            <h1>Kamaldeen Akinade</h1>
-        </div>
-
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
-        <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
-        <ul class="nav-items">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Kamaldeen Akinade home"><span>KA</span><small>portfolio / 2025</small></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>menu</b></button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="https://github.com/kamaldeenAkinade" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
     </nav>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h2>Hi, I'm <span class="name">Kamaldeen Akinade</span></h2>
-            <p>Front-End Developer & Creative UX Designer</p>
-            <a href="#projects" class="btn-primary">View My Work</a>
-        </section>
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for select projects <span class="eyebrow-line"></span> Lagos / remote</p>
+        <h1>I make the<br /><em>web feel</em> <span>human.</span></h1>
+        <p class="hero-intro">Front-end developer and creative UX designer building responsive, accessible interfaces with enough personality to be remembered.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#contact">Start a conversation <span>↗</span></a></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Abstract red botanical image">
+        <div class="image-frame"><img src="images/hero image.jpg" alt="Red-lit palm leaves creating a graphic abstract texture" /><div class="image-caption"><span>01 / 05</span><span>made with curiosity</span></div></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-stamp">Design<br />with intent<br /><span>✳</span></div>
+      </div>
+      <div class="scroll-cue"><span>scroll to explore</span><i></i></div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2>About Me</h2>
-            <div class="description-n-tags-container">
-                <p>I'm a passionate front-end developer with a keen eye for design and a love for creating engaging user experiences. Currently completing an intensive front-end engineering bootcamp, I specialize in building responsive, accessible websites using modern web technologies.</p>
-                <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or learning the latest web development frameworks.</p>
+    <section id="work" class="work section-wrap">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / selected work</p><h2>A few things<br /><em>I’ve shipped.</em></h2></div><p class="heading-note">A collection of interfaces, systems, and experiments — built to solve real problems and look good doing it.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-feature reveal"><div class="project-art art-green"><span class="art-label">ORDER<br />FLOW</span><span class="art-number">01</span><div class="art-window"><div></div><div></div><div></div><b>Order<br />Management</b></div></div><div class="project-info"><p class="project-meta">01 — dashboard / operations</p><h3>Order Management</h3><p>Making complex order operations feel simple, scannable, and under control.</p><div class="project-footer"><ul class="tags"><li>UI systems</li><li>Front-end</li></ul><a href="https://github.com/kamaldeenAkinade/Order-Management" target="_blank" rel="noreferrer" aria-label="View Order Management on GitHub">View case <span>↗</span></a></div></div></article>
+        <article class="project-card reveal"><div class="project-art art-pink"><span class="art-label">CARE<br />FIRST</span><span class="art-number">02</span><div class="cross">+</div><div class="art-pill">HEALTHCARE<br /><b>PLUS</b></div></div><div class="project-info"><p class="project-meta">02 — product / healthcare</p><h3>HealthCare Plus</h3><p>A warmer, more human digital front door for healthcare.</p><div class="project-footer"><ul class="tags"><li>Responsive</li><li>UX</li></ul><a href="https://github.com/kamaldeenAkinade/HealthCare-Plus" target="_blank" rel="noreferrer" aria-label="View HealthCare Plus on GitHub">View case <span>↗</span></a></div></div></article>
+        <article class="project-card reveal"><div class="project-art art-orange"><span class="art-label">LEARN<br />LOUDER</span><span class="art-number">03</span><div class="book-shape"><span>EDU</span><b>PORTAL</b></div><div class="sun"></div></div><div class="project-info"><p class="project-meta">03 — platform / education</p><h3>EduPortal</h3><p>Reducing friction between learners, lessons, and momentum.</p><div class="project-footer"><ul class="tags"><li>Interaction</li><li>JavaScript</li></ul><a href="https://github.com/kamaldeenAkinade/EduPortal" target="_blank" rel="noreferrer" aria-label="View EduPortal on GitHub">View case <span>↗</span></a></div></div></article>
+      </div>
+      <div class="more-work"><span>There’s more where that came from.</span><a href="https://github.com/kamaldeenAkinade?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories <span>↗</span></a></div>
+    </section>
 
-                <ul class="tags" aria-label="Skills">
-                    <li class="tag">HTML5</li>
-                    <li class="tag">CSS3</li>
-                    <li class="tag">JavaScript</li>
-                    <li class="tag">Responsive Design</li>
-                    <li class="tag">User Experience</li>
-                </ul>
-            </div>
-        </section>
+    <section id="about" class="about section-wrap"><div class="about-marker"><p class="eyebrow">03 / the person behind the pixels</p><div class="about-line"></div></div><div class="about-content reveal"><h2>Good design is<br /><em>felt</em> before it’s<br />explained.</h2><div class="about-copy"><p>I’m Kamaldeen — a front-end developer with a soft spot for clear systems, expressive details, and the moment an interface just clicks.</p><p>I’m currently sharpening my craft through front-end engineering, building responsive experiences with HTML, CSS, JavaScript, and a growing toolkit of modern patterns.</p><div class="skill-list"><span>HTML / CSS</span><span>JavaScript</span><span>Responsive design</span><span>UX thinking</span></div></div></div></section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <article class="project">
-                    <div class="project-thumbnail">
-                        <h3>Project 1</h3>
-                    </div>
-                    <div class="project-details">
-                        <h3 class="title">E-commerce Landing Page</h3>
-                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
-                        <ul class="tags" aria-label="Technologies used">
-                            <li class="tag">HTML5</li>
-                            <li class="tag">CSS3</li>
-                            <li class="tag">JavaScript</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" aria-label="View live demo of E-commerce Landing Page">
-                                Live Demo
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="#" aria-label="View GitHub repository">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-thumbnail">
-                        <h3>Project 2</h3>
-                    </div>
-                    <div class="project-details">
-                        <h3 class="title">Portfolio Dashboard</h3>
-                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
-                        <ul class="tags" aria-label="Technologies used">
-                            <li class="tag">HTML5</li>
-                            <li class="tag">CSS3</li>
-                            <li class="tag">JavaScript</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" aria-label="View live demo of Portfolio Dashboard">
-                                Live Demo
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="#" aria-label="View GitHub repository">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project">
-                    <div class="project-thumbnail">
-                        <h3>Project 3</h3>
-                    </div>
-                    <div class="project-details">
-                        <h3 class="title">Task Manager App</h3>
-                        <p class="description">A modern, responsive landing page for an online store featuring smooth animations and interactive elements.</p>
-                        <ul class="tags" aria-label="Technologies used">
-                            <li class="tag">HTML5</li>
-                            <li class="tag">CSS3</li>
-                            <li class="tag">JavaScript</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" aria-label="View live demo of Task Manager App">
-                                Live Demo
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="#" aria-label="View GitHub repository">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>Get In Touch</h2>
-            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
-
-            <form class="contact-form" action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
-                <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
-                <textarea name="message" placeholder="Your Message" id="message" required aria-label="Your message"></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-
-            <ul class="social-links" aria-label="Social media links">
-                <li>
-                    <a href="#" aria-label="Visit my GitHub profile">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Connect on LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Follow on Twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Kamaldeen Akinade. All rights reserved.</p>
-    </footer>
+    <section id="contact" class="contact section-wrap"><div class="contact-top"><p class="eyebrow">04 / have a good one?</p><span class="contact-index">✳</span></div><h2 class="reveal">Let’s make<br /><em>something real.</em></h2><div class="contact-bottom"><p>Have a project, an idea, or just a good question? My inbox is open.</p><a class="button button-lime" href="mailto:kamaldeenakinade@gmail.com">Say hello <span>↗</span></a></div></section>
+  </main>
+  <footer class="site-footer section-wrap"><span>© 2025 Kamaldeen Akinade</span><span>Built with intention</span><a href="#top">Back to top ↑</a></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle'); const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('is-open', !open); });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { toggle.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); }));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
