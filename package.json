@@ -1,0 +1,12 @@
+{
+  "name": "kamaldeen-akinade-portfolio",
+  "private": true,
+  "description": "Personal portfolio. Static site; the only build step bundles the Three.js hero scene.",
+  "scripts": {
+    "build": "esbuild src/hero-scene.js --bundle --minify --format=esm --target=es2020 --outfile=js/hero-scene.js --legal-comments=none"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "0.186.1"
+  }
+}

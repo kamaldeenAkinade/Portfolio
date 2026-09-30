@@ -3,61 +3,244 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kamaldeen Akinade is a front-end developer crafting clear, expressive digital experiences." />
+  <title>Kamaldeen Akinade | Front-end Developer &amp; UI Designer</title>
+  <meta name="description" content="Kamaldeen Akinade is a Lagos-based front-end developer and UI designer building fast, accessible, memorable websites and web apps for businesses and teams." />
   <meta name="theme-color" content="#11110f" />
-  <title>Kamaldeen Akinade — Front-end developer</title>
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kamaldeen Akinade | Front-end Developer &amp; UI Designer" />
+  <meta property="og:description" content="Fast, accessible, memorable websites and web apps. Available for freelance projects and front-end roles." />
+  <meta property="og:image" content="https://kamaldeenakinade.github.io/Portfolio/images/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2311110f'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-weight='800' font-size='24' text-anchor='middle' fill='%23d8ff4f'%3EKA%3C/text%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/palm-480.webp 480w, images/palm-720.webp 720w, images/palm-960.webp 960w" imagesizes="(max-width: 800px) 280px, 360px" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="modulepreload" href="js/main.js" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kamaldeen Akinade",
+    "jobTitle": "Front-end Developer & UI Designer",
+    "email": "mailto:kamaldeenakinade@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
+    "sameAs": ["https://github.com/kamaldeenAkinade"],
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Three.js", "WebGL", "Responsive design", "Web accessibility", "UI design", "UX design"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Kamaldeen Akinade home"><span>KA</span><small>portfolio / 2025</small></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>menu</b></button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact</a>
-      <a class="nav-cta" href="https://github.com/kamaldeenAkinade" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-    </nav>
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Kamaldeen Akinade, back to top"><span>KA</span><small>Kamaldeen Akinade</small></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><i aria-hidden="true"></i><b>Menu</b></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a class="nav-cta magnetic" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero section-wrap">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Available for select projects <span class="eyebrow-line"></span> Lagos / remote</p>
-        <h1>I make the<br /><em>web feel</em> <span>human.</span></h1>
-        <p class="hero-intro">Front-end developer and creative UX designer building responsive, accessible interfaces with enough personality to be remembered.</p>
-        <div class="hero-actions"><a class="button button-lime" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#contact">Start a conversation <span>↗</span></a></div>
+  <main id="main">
+    <section class="hero section-wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow hero-in" style="--d:0"><span class="status-dot"></span> <span>Open to freelance &amp; full-time</span> <span class="eyebrow-line"></span> <span class="eyebrow-loc">Lagos / Remote</span></p>
+        <h1 aria-label="I make the web feel human.">
+          <span class="line" aria-hidden="true"><span class="word" style="--d:1">I make</span> <span class="word" style="--d:2">the</span></span>
+          <span class="line" aria-hidden="true"><em class="word" style="--d:3">web feel</em></span>
+          <span class="line" aria-hidden="true"><span class="word" style="--d:4">human.</span></span>
+        </h1>
+        <p class="hero-intro hero-in" style="--d:5">Front-end developer and UI designer. I build fast, accessible websites and web apps for businesses and teams who care how their product <em>feels</em>, not just how it looks.</p>
+        <div class="hero-actions hero-in" style="--d:6">
+          <a class="button button-lime magnetic" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="hero-visual reveal" aria-label="Abstract red botanical image">
-        <div class="image-frame"><img src="images/hero image.jpg" alt="Red-lit palm leaves creating a graphic abstract texture" /><div class="image-caption"><span>01 / 05</span><span>made with curiosity</span></div></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-stamp">Design<br />with intent<br /><span>✳</span></div>
+
+      <div class="hero-visual hero-in" style="--d:3" data-hero-visual>
+        <div class="image-frame">
+          <picture>
+            <source type="image/webp" srcset="images/palm-480.webp 480w, images/palm-720.webp 720w, images/palm-960.webp 960w" sizes="(max-width: 800px) 280px, 360px" />
+            <img src="images/palm-720.jpg" width="720" height="1008" alt="Red-lit palm leaves against a night sky" fetchpriority="high" decoding="async" data-hero-image />
+          </picture>
+          <div class="image-caption"><span>Palm / 01</span><span>Made with curiosity</span></div>
+        </div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-stamp" aria-hidden="true">Design<br />with intent<br /><span>✳</span></div>
+        <p class="scene-hint" aria-hidden="true"><i></i><span class="hint-fine">Move your cursor through the palm</span><span class="hint-touch">Tap the palm</span></p>
       </div>
-      <div class="scroll-cue"><span>scroll to explore</span><i></i></div>
+
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll to explore</span><i></i></div>
     </section>
+
+    <div class="marquee" aria-label="Toolkit: HTML, CSS, JavaScript, Three.js and WebGL, responsive design, accessibility, UI and UX design, Git and GitHub, web performance">
+      <div class="marquee-track" aria-hidden="true">
+        <span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JavaScript</span><i>✳</i><span>Three.js / WebGL</span><i>✳</i><span>Responsive design</span><i>✳</i><span>Accessibility</span><i>✳</i><span>UI / UX design</span><i>✳</i><span>Git &amp; GitHub</span><i>✳</i><span>Web performance</span><i>✳</i>
+        <span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JavaScript</span><i>✳</i><span>Three.js / WebGL</span><i>✳</i><span>Responsive design</span><i>✳</i><span>Accessibility</span><i>✳</i><span>UI / UX design</span><i>✳</i><span>Git &amp; GitHub</span><i>✳</i><span>Web performance</span><i>✳</i>
+      </div>
+    </div>
 
     <section id="work" class="work section-wrap">
-      <div class="section-heading reveal"><div><p class="eyebrow">02 / selected work</p><h2>A few things<br /><em>I’ve shipped.</em></h2></div><p class="heading-note">A collection of interfaces, systems, and experiments — built to solve real problems and look good doing it.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature reveal"><div class="project-art art-green"><span class="art-label">ORDER<br />FLOW</span><span class="art-number">01</span><div class="art-window"><div></div><div></div><div></div><b>Order<br />Management</b></div></div><div class="project-info"><p class="project-meta">01 — dashboard / operations</p><h3>Order Management</h3><p>Making complex order operations feel simple, scannable, and under control.</p><div class="project-footer"><ul class="tags"><li>UI systems</li><li>Front-end</li></ul><a href="https://github.com/kamaldeenAkinade/Order-Management" target="_blank" rel="noreferrer" aria-label="View Order Management on GitHub">View case <span>↗</span></a></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-pink"><span class="art-label">CARE<br />FIRST</span><span class="art-number">02</span><div class="cross">+</div><div class="art-pill">HEALTHCARE<br /><b>PLUS</b></div></div><div class="project-info"><p class="project-meta">02 — product / healthcare</p><h3>HealthCare Plus</h3><p>A warmer, more human digital front door for healthcare.</p><div class="project-footer"><ul class="tags"><li>Responsive</li><li>UX</li></ul><a href="https://github.com/kamaldeenAkinade/HealthCare-Plus" target="_blank" rel="noreferrer" aria-label="View HealthCare Plus on GitHub">View case <span>↗</span></a></div></div></article>
-        <article class="project-card reveal"><div class="project-art art-orange"><span class="art-label">LEARN<br />LOUDER</span><span class="art-number">03</span><div class="book-shape"><span>EDU</span><b>PORTAL</b></div><div class="sun"></div></div><div class="project-info"><p class="project-meta">03 — platform / education</p><h3>EduPortal</h3><p>Reducing friction between learners, lessons, and momentum.</p><div class="project-footer"><ul class="tags"><li>Interaction</li><li>JavaScript</li></ul><a href="https://github.com/kamaldeenAkinade/EduPortal" target="_blank" rel="noreferrer" aria-label="View EduPortal on GitHub">View case <span>↗</span></a></div></div></article>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">01 / Selected work</p><h2>A few things<br /><em>I’ve shipped.</em></h2></div>
+        <p class="heading-note">Interfaces, systems and experiments built to solve real problems and look good doing it. Each one links to the code, so you can see how I work, not just what I make.</p>
       </div>
-      <div class="more-work"><span>There’s more where that came from.</span><a href="https://github.com/kamaldeenAkinade?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories <span>↗</span></a></div>
+
+      <div class="project-grid">
+        <article class="project-card project-feature reveal" data-tilt>
+          <a class="project-art art-green" href="https://github.com/kamaldeenAkinade/Order-Management" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+            <span class="art-label">Order<br />flow</span><span class="art-number">01</span>
+            <div class="art-window"><div></div><div></div><div></div><b>Order<br />Management</b></div>
+            <span class="glare"></span>
+          </a>
+          <div class="project-info">
+            <p class="project-meta">01 / Dashboard / Operations</p>
+            <h3>Order Management</h3>
+            <p>An operations dashboard that turns a busy stream of orders into something a team can scan, filter and act on at a glance.</p>
+            <div class="project-footer">
+              <ul class="tags"><li>Dashboard UI</li><li>JavaScript</li><li>Responsive</li></ul>
+              <a href="https://github.com/kamaldeenAkinade/Order-Management" target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span><span class="sr-only"> for Order Management (opens GitHub)</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <a class="project-art art-pink" href="https://github.com/kamaldeenAkinade/HealthCare-Plus" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+            <span class="art-label">Care<br />first</span><span class="art-number">02</span>
+            <div class="cross">+</div><div class="art-pill">Healthcare<br /><b>Plus</b></div>
+            <span class="glare"></span>
+          </a>
+          <div class="project-info">
+            <p class="project-meta">02 / Product / Healthcare</p>
+            <h3>HealthCare Plus</h3>
+            <p>A warmer, more human front door for healthcare. Calm layout, clear paths, and nothing standing between a patient and the help they came for.</p>
+            <div class="project-footer">
+              <ul class="tags"><li>Responsive</li><li>UX</li></ul>
+              <a href="https://github.com/kamaldeenAkinade/HealthCare-Plus" target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span><span class="sr-only"> for HealthCare Plus (opens GitHub)</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <a class="project-art art-orange" href="https://github.com/kamaldeenAkinade/EduPortal" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+            <span class="art-label">Learn<br />louder</span><span class="art-number">03</span>
+            <div class="book-shape"><span>Edu</span><b>Portal</b></div><div class="sun"></div>
+            <span class="glare"></span>
+          </a>
+          <div class="project-info">
+            <p class="project-meta">03 / Platform / Education</p>
+            <h3>EduPortal</h3>
+            <p>A learning portal that keeps students oriented, cutting the friction between learners, lessons and momentum.</p>
+            <div class="project-footer">
+              <ul class="tags"><li>Interaction</li><li>JavaScript</li></ul>
+              <a href="https://github.com/kamaldeenAkinade/EduPortal" target="_blank" rel="noreferrer">View code <span aria-hidden="true">↗</span><span class="sr-only"> for EduPortal (opens GitHub)</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-work reveal"><span>There’s more where that came from.</span><a href="https://github.com/kamaldeenAkinade?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section id="about" class="about section-wrap"><div class="about-marker"><p class="eyebrow">03 / the person behind the pixels</p><div class="about-line"></div></div><div class="about-content reveal"><h2>Good design is<br /><em>felt</em> before it’s<br />explained.</h2><div class="about-copy"><p>I’m Kamaldeen — a front-end developer with a soft spot for clear systems, expressive details, and the moment an interface just clicks.</p><p>I’m currently sharpening my craft through front-end engineering, building responsive experiences with HTML, CSS, JavaScript, and a growing toolkit of modern patterns.</p><div class="skill-list"><span>HTML / CSS</span><span>JavaScript</span><span>Responsive design</span><span>UX thinking</span></div></div></div></section>
+    <section id="services" class="services section-wrap">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">02 / Services</p><h2>How I can<br /><em>help you.</em></h2></div>
+        <p class="heading-note">Whether you need a new website, a cleaner interface for your product, or one extra pair of front-end hands on your team, here’s where I add the most value.</p>
+      </div>
 
-    <section id="contact" class="contact section-wrap"><div class="contact-top"><p class="eyebrow">04 / have a good one?</p><span class="contact-index">✳</span></div><h2 class="reveal">Let’s make<br /><em>something real.</em></h2><div class="contact-bottom"><p>Have a project, an idea, or just a good question? My inbox is open.</p><a class="button button-lime" href="mailto:kamaldeenakinade@gmail.com">Say hello <span>↗</span></a></div></section>
+      <ol class="service-list">
+        <li class="service reveal">
+          <span class="service-index">01</span>
+          <div class="service-main"><h3>Business websites &amp; landing pages</h3><p>Fast, mobile-first sites that explain what you do in seconds and turn visitors into enquiries.</p></div>
+          <ul class="service-tags"><li>Custom design</li><li>Responsive build</li><li>SEO basics</li><li>Contact forms</li></ul>
+        </li>
+        <li class="service reveal">
+          <span class="service-index">02</span>
+          <div class="service-main"><h3>Web app interfaces</h3><p>Dashboards, portals and internal tools that make complex information easy to scan and act on.</p></div>
+          <ul class="service-tags"><li>Component UI</li><li>Tables &amp; filters</li><li>Accessible forms</li></ul>
+        </li>
+        <li class="service reveal">
+          <span class="service-index">03</span>
+          <div class="service-main"><h3>UI / UX design</h3><p>User flows, wireframes and polished interface design, shaped around how real people actually use your product.</p></div>
+          <ul class="service-tags"><li>User flows</li><li>Wireframes</li><li>Visual design</li></ul>
+        </li>
+        <li class="service reveal">
+          <span class="service-index">04</span>
+          <div class="service-main"><h3>Interactive &amp; 3D moments</h3><p>Motion, micro-interactions and WebGL scenes (like the palm at the top of this page) that make a brand impossible to forget, without slowing it down.</p></div>
+          <ul class="service-tags"><li>Three.js</li><li>Scroll &amp; motion</li><li>Performance-tuned</li></ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="process" class="process section-wrap">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">03 / Process</p><h2>No mystery.<br /><em>Just momentum.</em></h2></div>
+        <p class="heading-note">A simple, transparent way of working, so you always know what’s happening, what’s next, and what you’re getting.</p>
+      </div>
+      <div class="process-grid">
+        <article class="step reveal"><span class="step-no">01</span><h3>Discover</h3><p>We talk through your goals, your audience and what success looks like. I come back with a clear scope and timeline.</p></article>
+        <article class="step reveal"><span class="step-no">02</span><h3>Design</h3><p>Structure first, then style. You see real layouts early and shape them before a line of production code is written.</p></article>
+        <article class="step reveal"><span class="step-no">03</span><h3>Build</h3><p>Clean, responsive, accessible code, shared as live previews you can click through on your own phone.</p></article>
+        <article class="step reveal"><span class="step-no">04</span><h3>Launch</h3><p>Performance checks, cross-device testing and a smooth handover, with support after go-live.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="about section-wrap">
+      <div class="about-marker"><p class="eyebrow">04 / The person behind the pixels</p><div class="about-line"></div></div>
+      <div class="about-content reveal">
+        <h2>Good design is<br /><em>felt</em> before it’s<br />explained.</h2>
+        <div class="about-copy">
+          <p>I’m Kamaldeen, a front-end developer with a soft spot for clear systems, expressive details, and the moment an interface just clicks.</p>
+          <p>I work at the point where design meets code. That means I can take an idea from a rough sketch to a polished, production-ready interface, and I care about the parts most people never notice: load times, keyboard navigation, and how a page behaves on a cheap phone with a weak signal.</p>
+          <ul class="principles">
+            <li><b>Mobile-first</b><span>Designed for the phone in your customer’s hand.</span></li>
+            <li><b>Accessible by default</b><span>Semantic markup, keyboard support, readable contrast.</span></li>
+            <li><b>Fast on real networks</b><span>Lean pages, optimized media, nothing wasted.</span></li>
+            <li><b>Clear communication</b><span>Regular updates in plain language. No surprises.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-wrap">
+      <div class="contact-top"><p class="eyebrow">05 / Got a project in mind?</p><span class="contact-index" aria-hidden="true">✳</span></div>
+      <h2 class="reveal">Let’s make<br /><em>something real.</em></h2>
+      <div class="contact-bottom reveal">
+        <div class="contact-text">
+          <p>Tell me about your project, timeline and budget, or the role you’re hiring for. I’ll get back to you with clear next steps.</p>
+          <p class="local-time"><span class="status-dot"></span> Lagos, <time data-clock>--:--</time> (WAT, GMT+1)</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-lime magnetic" href="mailto:kamaldeenakinade@gmail.com?subject=Project%20enquiry">Email me <span aria-hidden="true">↗</span></a>
+          <button class="copy-email" type="button" data-copy="kamaldeenakinade@gmail.com"><span data-copy-label>kamaldeenakinade@gmail.com</span><small>Copy</small></button>
+          <a class="text-link" href="https://github.com/kamaldeenAkinade" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer section-wrap"><span>© 2025 Kamaldeen Akinade</span><span>Built with intention</span><a href="#top">Back to top ↑</a></footer>
-  <script>
-    const toggle = document.querySelector('.menu-toggle'); const nav = document.querySelector('.site-nav');
-    toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('is-open', !open); });
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { toggle.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); }));
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); }), { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+
+  <footer class="site-footer section-wrap">
+    <span>© <span data-year>2026</span> Kamaldeen Akinade</span>
+    <span class="colophon">Hand-built with HTML, CSS, JavaScript &amp; Three.js</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
